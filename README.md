@@ -1,68 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Getting Started
+This is a boilerplate for a NodeJS application with React, SaSS, Airbnb's React Lint, and Facebook's Flux. Latest version of all as of JAN 23, 2019. I've also added some custom configs to Airbnb's React Lint to allow for more spacing and cleaner code.
 
-## Available Scripts
+# DEVELOPMENT GUIDE
+## Prerequisites
+In order to run the application you will need ALL of the following:
 
-In the project directory, you can run:
+* NodeJS (Download here: https://nodejs.org/en/download/)
+* Git (Download here: https://git-scm.com/downloads) Warning: This could already be on your machine! Run `git -v` to verify.
 
-### `npm start`
+## Cloning Git into your local Machine
+1. Browse to the directory you want to download this project in.
+2. Run `git clone git@github.com:RyanHerga/pcap-eagle.git` on the terminal or command prompt
+3. Enter your username and password as prompted
+4. The source code should now be in your local machine, you should now be able to `cd pcap-eagle`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Installing Dependencies
+1. Verify that NodeJS is installed by running ``npm -v`` on the terminal
+2. `cd` to the directory for this project.
+3. Run `npm install` or if that doesn't work, run `sudo npm install`
+4. All dependencies should install successfully into the node_modules folder (This is sometimes a hidden folder)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Running the application
+Once the dependencies have been installed, you can run `npm start` to launch the website.
+The website should now be live here:  [http://localhost:3000](http://localhost:3000)
 
-### `npm test`
+## Setting up the IDE
+We recommend using Visual Studios Code for Web Development. You can download that here: https://code.visualstudio.com/
+VS Code also offers an interactive git feature so that pulling and pushing code changes can be done directly on the software. ESLint is also supported allowing automatic indentation and code corrections upon each save. There are some additional setting up to do to make sure the application runs seamlessly with VS Code.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Get Started with ESLint
+1. Open VS Code and load the project directory in your current workspace.
+2. On the left navigation, click on the "Extensions" tab - That's the fourth icon down.
+3. Search for "ESLint" and install Dirk Baeumer's version with 13M+ Downloads.
+4. Reload VS Code
+5. On Mac, Press `CMD+SHIFT+P` then look for `Preferences: Open Workspace Settings`
+6. Under Search Settings, search for 'ESlint Auto Fix on Save' and enable that option by making sure the checkbox is checked.
 
-### `npm run build`
+When modifying any source code in the Workspace, you will now be able to see errors and warnings. If you save the file, VS Code will automatically fix these errors when applicable.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Good to have VSCode Extensions
+* `Auto Close Tag` by Jun Han will help with HTML tags
+* `Useful React Snippets` by igorming is useful for quick React shortcuts to create components by simply writing `comp` and pressing space
+* `VSCode Great Icons` by Emmanuel Béziat will help you differentiate between files in the VSCode File Explorer
+* `Prettier` is a must have for any EsLint users - Configure it to work with Eslint and you can easily format documents to fit your eslint config.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## How to use Git
+By this point, you've already ran one git command to clone the repository into your local machine. Git is a version-control system for tracking changes in computer files and coordinating work on those files among multiple people. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I couldn't have explained it better, myself. For information on Git check out this tutorial: [http://rogerdudler.github.io/git-guide/](http://rogerdudler.github.io/git-guide/)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Some additional notes: Always pull before working on your code to get the latest changes and be sure to make your commit messages meaningful so that other developers know why those changes have been made.
