@@ -1,0 +1,5 @@
+{
+    "prettier.jsxBracketSameLine": true,
+    "prettier.eslintIntegration": true,
+    "eslint.autoFixOnSave": true
+}
